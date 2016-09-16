@@ -4,4 +4,4 @@
   service:
     name: "{{ pm2_service_name }}"
     state: restarted
-  when:pm2_service_enabled == 'yes' and  pm2_service_state != 'stopped'
+  when: pm2_service_enabled == 'yes' and  pm2_service_state != 'stopped'
